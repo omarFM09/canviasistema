@@ -1,0 +1,31 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+    box-sizing: border-box;
+}
+
+
+  @media (max-width: 980px) {
+    .main-sidebar {
+      transform: translateX(-250px);
+      position: fixed;
+      z-index: 1030;
+      height: 100vh;
+      transition: transform 0.3s ease;
+    }
+    
+    .sidebar-open .main-sidebar {
+      transform: translateX(0);
+    }
+    
+    .navbar-toggler {
+      display: block;
+    }
+    
+    .content-wrapper {
+      margin-left: 0 !important;
+    }
+  }
